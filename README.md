@@ -47,12 +47,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
 <br />
 
+<h3>Step 2: Ensure Connectivity between the client and Domain Controller</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
+<img src="https://user-images.githubusercontent.com/131130119/235381805-edd6fa5d-4636-4264-a642-e21ccd031f4f.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="https://user-images.githubusercontent.com/131130119/235381924-35374d42-5669-49b0-a96e-f1cdf910c2c9.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
+
+- Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
+- Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
+- Check back at Client-1 to see the ping succeed
+  
 <br />
 
 <p>
