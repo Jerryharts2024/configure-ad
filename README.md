@@ -145,16 +145,25 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - go to active directory user and computer
   -inside the computer folder, check if client 1 appears in it
 - Create a new OU named “_CLIENTS” and drag Client-1 into there 
-  
-  
+   
 <br />
 
+  <h3>Step 6: Setup Remote Desktop for non-administrative users on Client-1</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
+<img src="https://user-images.githubusercontent.com/131130119/235403363-b24fae3b-abbb-45b0-9840-335c601df477.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- Log into Client-1 as mydomain.com\jane_admin and open system properties
+  - Click “Remote Desktop”
+  - Allow “domain users” access to remote desktop
+  
+   <p>
+<img src="https://user-images.githubusercontent.com/131130119/235403575-301ebfae-7bf2-43bf-80d3-e843b30f1cf8.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
+  
+- You can now log into Client-1 as a normal, non-administrative user now
+- Normally you’d want to do this with Group Policy that allows you to change MANY systems at once
+
 <br />
 
 <p>
