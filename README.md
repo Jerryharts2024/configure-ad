@@ -102,10 +102,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://user-images.githubusercontent.com/131130119/235386531-bcac59c3-3be6-4845-8721-3e0c684418cb.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
   
-  <p>
-<img src="https://user-images.githubusercontent.com/131130119/235387295-32781c87-7f80-4d15-8a55-596c9b704b69.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
-</p>
-  
 - In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
     - new 
     - organizational unit 
@@ -118,13 +114,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
     - new
     - user
     - name = Jane Doe 
+  
+    <p>
+<img src="https://user-images.githubusercontent.com/131130119/235387295-32781c87-7f80-4d15-8a55-596c9b704b69.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
+</p>
+  
 - Add jane_admin to the “Domain Admins” Security Group
 - Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
 - User jane_admin as your admin account from now on
-
-  
-  
-  
   
 <br />
 
