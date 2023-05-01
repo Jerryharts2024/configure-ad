@@ -61,12 +61,22 @@ This tutorial outlines the implementation of on-premises Active Directory within
   
 <br />
 
+<h3>Step 3: Install Active Directory</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
+<img src="https://user-images.githubusercontent.com/131130119/235382528-af5bc10d-714f-4924-9f79-e647386fe23b.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+
+- Login to DC-1 and install Active Directory Domain Services
+    - add role and features -->
+    - active directory domain services
+    - add features
+    - install
+- Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
+    - add new forest
+    - root domain name (mydomain.com)
+    - install
+- Restart and then log back into DC-1 as user: mydomain.com\labuser
+  
 <br />
 
 <p>
