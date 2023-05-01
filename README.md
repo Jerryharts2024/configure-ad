@@ -187,7 +187,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
   - Run the script and observe the accounts being created
   
- <p>
+<p>
 <img src="https://user-images.githubusercontent.com/131130119/235406112-41ebf870-68fc-4371-af28-10339518ea1e.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
   
@@ -195,6 +195,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - open ADUC and observe the accounts in the appropriate OU
   - attempt to log into Client-1 with one of the accounts (take note of the password in the script)
 
+<p>
+<img src="https://user-images.githubusercontent.com/131130119/235407474-5aa9c603-7f32-4e72-8566-1f2c9b73e7d5.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
+</p>
+  
 <br />
 <p>
   DONE!
