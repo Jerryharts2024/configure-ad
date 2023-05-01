@@ -140,6 +140,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
     - go to the network topology
     - dns server and 
     - set Client-1’s DNS to DC’s Private IP address
+ 
+  <p>
+<img src="https://user-images.githubusercontent.com/131130119/235406488-20d84b45-b5ec-4215-86f0-0134687c2b26.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
+</p>
+  
 - From the Azure Portal, restart Client-1
 - Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
   - go to rename this PC
@@ -183,7 +188,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Run the script and observe the accounts being created
   
  <p>
-<img src="https://user-images.githubusercontent.com/131130119/235405833-c0349d17-485c-4e42-8a74-c7ffa180540d.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
+<img src="https://user-images.githubusercontent.com/131130119/235406112-41ebf870-68fc-4371-af28-10339518ea1e.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
   
 - When finished, 
