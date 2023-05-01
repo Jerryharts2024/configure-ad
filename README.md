@@ -56,14 +56,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img src="https://user-images.githubusercontent.com/131130119/235381805-edd6fa5d-4636-4264-a642-e21ccd031f4f.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
-<p>
-<img src="https://user-images.githubusercontent.com/131130119/235381924-35374d42-5669-49b0-a96e-f1cdf910c2c9.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
-</p>
 
 - Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
   - run cmd (command prompt)
   - type "ping -t <ip address>"
   - notice that the echo result isn't successful as it will timeout
+  
+  <p>
+<img src="https://user-images.githubusercontent.com/131130119/235381924-35374d42-5669-49b0-a96e-f1cdf910c2c9.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
+</p>
+  
 - Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
   - run window firewall (wf.msc)
   - click on inbound rule
@@ -120,6 +122,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
   
 - Add jane_admin to the “Domain Admins” Security Group
+    - right click (Jane Doe) and go to properties
+    - go to security
+    - search for domain admin
+    - add Jane Doe to this security group to allow access as admin user 
 - Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
 - User jane_admin as your admin account from now on
   
