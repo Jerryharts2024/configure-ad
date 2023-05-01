@@ -45,6 +45,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Set Domain Controller’s NIC Private IP address to be static
 - Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.a
 - Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
+
 <br />
 
 <h3>Step 2: Ensure Connectivity between the client and Domain Controller</h3>
@@ -84,8 +85,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
   
   <h3>Step 4: Create an Admin and Normal User Account in AD</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
+<img src="https://user-images.githubusercontent.com/131130119/235386531-bcac59c3-3be6-4845-8721-3e0c684418cb.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
+  
 - In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
 - Create a new OU named “_ADMINS”
 - Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
