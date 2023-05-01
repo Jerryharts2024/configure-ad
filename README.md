@@ -176,6 +176,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
+  
 - Login to DC-1 as jane_admin
   - Open PowerShell_ise as an administrator
   - Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
