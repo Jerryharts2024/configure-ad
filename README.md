@@ -41,8 +41,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 - Create the Domain Controller VM (Windows Server 2022) named “DC-1”
+  - create new virtual machine
+  - name the VM
 - Take note of the Resource Group and Virtual Network (Vnet) that get created at this time
+  - ensure that a resource group is created this time and intall the VM in the RG 
 - Set Domain Controller’s NIC Private IP address to be static
+  - In Azure, go to the network topology change the NIC IP to static
 - Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.a
 - Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
 
@@ -57,8 +61,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 - Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
+  - run cmd (command prompt)
+  - type "ping -t <ip address>"
+  - notice that the echo result isn't successful as it will timeout
 - Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
+  - run window firewall (wf.msc)
+  - click on inbound rule
+  - go to tcp protocol column
+  - look for ICMPv4 and enable the networking diagnosis echo requests
 - Check back at Client-1 to see the ping succeed
+  - go back to the perpetual ping on the client 1
+  - verify if the request has been recieved.
+  - it should be successful at this time after the ICMPv4 request has been enabled in the DC
   
 <br />
 
