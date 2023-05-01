@@ -27,11 +27,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 1: Setup Resources in Azure
 - Step 2: Ensure Connectivity between the client and Domain Controller
 - Step 3: Install Active Directory
-- Step 5: Create an Admin and Normal User Account in AD
-- Step 6: Join Client-1 to your domain (mydomain.com)
-- Step 7: Setup Remote Desktop for non-administrative users on Client-1
-- Step 8: Create a bunch of additional users and attempt to log into client-1 with one of the users
-- Step 9: Done!
+- Step 4: Create an Admin and Normal User Account in AD
+- Step 5: Join Client-1 to your domain (mydomain.com)
+- Step 6: Setup Remote Desktop for non-administrative users on Client-1
+- Step 7: Create a bunch of additional users and attempt to log into client-1 with one of the users
+- Step 8: Done!
 
 <h2>Deployment and Configuration Steps</h2>
 <br />
@@ -81,13 +81,22 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Restart and then log back into DC-1 as user: mydomain.com\labuser
   
 <br />
-
+  
+  <h3>Step 4: Create an Admin and Normal User Account in AD</h3>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+- In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
+- Create a new OU named “_ADMINS”
+- Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
+- Add jane_admin to the “Domain Admins” Security Group
+- Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
+- User jane_admin as your admin account from now on
+
+  
+  
+  
+  
 <br />
 
 <p>
