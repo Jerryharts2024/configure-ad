@@ -65,6 +65,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img src="https://user-images.githubusercontent.com/131130119/235382528-af5bc10d-714f-4924-9f79-e647386fe23b.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
 </p>
+  <p>
+<img src="https://user-images.githubusercontent.com/131130119/235383548-bc13e538-bf15-4c34-b4e3-17f8d6081ffe.png" height="80%" width="80%" alt="Deployment and Configuration Steps"/>
+</p>
 
 - Login to DC-1 and install Active Directory Domain Services
     - add role and features -->
